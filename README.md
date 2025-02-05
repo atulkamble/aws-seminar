@@ -1,5 +1,3 @@
-# aws-seminar
-
 To develop a comprehensive project that allows users to input data via a web application, displays it in the browser, and incorporates AWS services such as EC2, S3, Docker, Minikube, load balancing, and CloudWatch for monitoring and analysis, follow these detailed steps:
 
 **1. Develop the Web Application:**
@@ -175,5 +173,6 @@ To develop a comprehensive project that allows users to input data via a web app
        - ollow the official Minikube installation guide for your operating system.
      - **Start Minikube:**
 
-       ``bash
-       minik 
+       ```bash
+       minik
+       ```

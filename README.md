@@ -6,7 +6,7 @@ To develop a comprehensive project that allows users to input data via a web app
    - **Technology Stack:** se Node.js with Express for the backend and HTML for the frontend.
    - **Project Structure:**
 
-     ``
+     ```
      user-data-app/
      ├── Dockerfile
      ├── package.json
@@ -17,7 +17,7 @@ To develop a comprehensive project that allows users to input data via a web app
    - **Code Implementation:**
 
      - **`package.json`:** efine the project dependencies.
-       ``json
+       ```
        {
          "name": "user-data-app",
          "version": "1.0.0",
@@ -34,7 +34,7 @@ To develop a comprehensive project that allows users to input data via a web app
        }
        ```
      - **`public/index.html`:** reate a form for user input.
-       ``html
+       ```
        <!DOCTYPE html>
        <html lang="en">
        <head>
@@ -55,7 +55,7 @@ To develop a comprehensive project that allows users to input data via a web app
        </html>
        ```
      - **`server.js`:** et up the server to handle user input and display it.
-       ``javascript
+       ```
        const express = require('express');
        const bodyParser = require('body-parser');
        const AWS = require('aws-sdk');
@@ -104,7 +104,7 @@ To develop a comprehensive project that allows users to input data via a web app
    - **Objective:** ontainerize the application for consistent deployment.
    - **Create a `Dockerfile`:**
 
-     ``dockerfile
+     ```
      # Use Node.js LTS version as the base image
      FROM node:14
 
@@ -128,12 +128,12 @@ To develop a comprehensive project that allows users to input data via a web app
      ```
    - **Build the Docker Image:**
 
-     ``bash
+     ```
      docker build -t user-data-app .
      ```
    - **Run the Docker Container:**
 
-     ``bash
+     ```
      docker run -d -p 3000:3000 user-data-app
      ```
 **3. Set Up AWS S3 for Data Storage:**
@@ -160,7 +160,7 @@ To develop a comprehensive project that allows users to input data via a web app
          ```
      - **Run the Docker Container:**
 
-       ``bash
+       ```
        docker run -d -p 80:3000 your-docker-image
        ```
 **5. Set Up Minikube for Local Kubernetes Deployment:**
@@ -173,6 +173,6 @@ To develop a comprehensive project that allows users to input data via a web app
        - ollow the official Minikube installation guide for your operating system.
      - **Start Minikube:**
 
-       ```bash
+       ```
        minik
        ```

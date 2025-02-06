@@ -19,6 +19,14 @@ curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
 sudo yum install -y nodejs
 node -v
 npm -v
+npm install aws-sdk
+
+sudo yum install -y yum-utils
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+sudo yum -y install terraform
+terraform --version
+terraform -help
+terraform -help plan
 
 git clone https://github.com/atulkamble/aws-seminar.git
 cd aws-seminar/
